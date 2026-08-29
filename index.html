@@ -36,6 +36,16 @@ nav{position:sticky;top:16px;z-index:50;background:rgba(255,255,255,0.75);backdr
 .btn.whatsapp:hover{background:#20ba5a;border-color:#20ba5a;}
 .navcta.whatsapp{background:#25d366;color:#fff;padding:11px 18px;border-radius:999px;font-weight:800;font-size:14px;margin-left:8px;}
 .navcta.whatsapp:hover{background:#20ba5a;}
+
+.success-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.success-card{overflow:hidden;border-radius:18px;border:1px solid #e5eaf2;box-shadow:0 18px 55px rgba(7,27,66,.12);background:#fff;}
+.success-card img{width:100%;height:auto;display:block;object-fit:cover;}
+@media(max-width:900px){
+  .success-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+  .success-grid{grid-template-columns:1fr;}
+}
 section{padding:86px 0}
 .kicker{color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:.15em;font-size:12px}
 h1,h2,h3{line-height:1.08;margin:0 0 16px}
@@ -206,7 +216,7 @@ footer strong{color:#fff;letter-spacing:.15em}
   <div class="container navin">
     <a class="brand" href="#">EUREKA<span>✦</span></a>
     <div class="navlinks">
-      <a href="#courses">Courses</a><a href="#teachers">Teachers</a><a href="#why">Why Eureka</a><a href="#fees">Fees</a><a href="#contact">Contact</a>
+      <a href="#courses">Courses</a><a href="#teachers">Teachers</a><a href="#success">Success</a><a href="#why">Why Eureka</a><a href="#fees">Fees</a><a href="#contact">Contact</a>
     </div>
     <a class="navcta" href="tel:+918876057287">Call Now</a><a class="navcta whatsapp" href="https://wa.me/918876057287" target="_blank" rel="noopener">WhatsApp</a>
   </div>
@@ -410,6 +420,27 @@ footer strong{color:#fff;letter-spacing:.15em}
           <div class="highlight">“Science becomes easier when you understand the concept behind it.”</div>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<section class="success" id="success" style="background:#fff;">
+  <div class="container">
+    <div class="center">
+      <div class="kicker">Our Past Success</div>
+      <h2>Celebrating Student Achievements</h2>
+      <p class="lead center">Congratulations to our brilliant students for their excellent performance and academic excellence.</p>
+    </div>
+    <div class="success-grid">
+      <div class="success-card"><img src="assets/success/student1.jpeg?v=1787989804" alt="Successful Student"></div>
+      <div class="success-card"><img src="assets/success/student2.jpeg?v=1787989804" alt="Successful Student"></div>
+      <div class="success-card"><img src="assets/success/student3.jpeg?v=1787989804" alt="Successful Student"></div>
+      <div class="success-card"><img src="assets/success/student4.jpeg?v=1787989804" alt="Successful Student"></div>
+      <div class="success-card"><img src="assets/success/student5.jpeg?v=1787989804" alt="Successful Student"></div>
+      <div class="success-card"><img src="assets/success/student6.jpeg?v=1787989804" alt="Successful Student"></div>
+      <div class="success-card"><img src="assets/success/student7.jpeg?v=1787989804" alt="Successful Student"></div>
+      <div class="success-card"><img src="assets/success/student8.jpeg?v=1787989804" alt="Successful Student"></div>
+      <div class="success-card"><img src="assets/success/student9.jpeg?v=1787989804" alt="Successful Student"></div>
     </div>
   </div>
 </section>
