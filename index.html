@@ -108,99 +108,7 @@ footer strong{color:#fff;letter-spacing:.15em}
 }
 </style>
 <style>
-/* Poster Section Styles */
-
-
-
-
-.poster{
- width:min(1600px,100%); margin:0 auto; min-height:900px; position:relative; overflow:hidden;
- background:#f8fafc; color:#071b42; border-radius:20px;
- box-shadow:0 25px 80px #0008;
-}
-/* Decorative geometry */
-.poster:before{content:"";position:absolute;inset:0;pointer-events:none;
- background:
- radial-gradient(circle at 8% 12%,#1c67ee 0 2px,transparent 3px),
- radial-gradient(circle at 8% 12%,#1c67ee 0 1px,transparent 2px);
- background-size:18px 18px;opacity:.25}
-.arc{position:absolute;border:8px solid #155eea;border-radius:50%;width:440px;height:440px;left:-300px;top:-290px}
-.arc2{position:absolute;border:5px solid #f5b51b;border-radius:50%;width:430px;height:430px;left:-285px;top:-275px}
-.topline{height:12px;background:linear-gradient(90deg,#071b42 0 55%,#155eea 55% 82%,#f5b51b 82%)}
-
-/* Header */
-.header{display:grid;grid-template-columns:1.05fr 1.7fr .85fr;align-items:center;padding:25px 42px 8px;gap:25px}
-.logo{display:flex;align-items:center;gap:16px}
-.logoMark{width:92px;height:92px;border:10px solid #071b42;border-right-color:transparent;border-radius:50%;position:relative;transform:rotate(-18deg)}
-.logoMark:after{content:"✦";position:absolute;color:#f5b51b;font-size:55px;left:31px;top:7px;transform:rotate(18deg)}
-.logoText{font-size:45px;letter-spacing:10px;font-weight:900}
-.tag{font-size:12px;letter-spacing:5px;font-weight:700;color:#344054;margin-top:4px}
-.enroll{background:#071b42;color:white;padding:18px 25px;border-radius:18px;text-align:center;box-shadow:10px 10px 0 #f5b51b}
-.enroll b{font-size:27px;color:#f5b51b;display:block}
-.enroll span{font-weight:800;font-size:14px}
-
-/* Hero */
-.hero{display:grid;grid-template-columns:1.12fr .88fr;gap:25px;padding:15px 42px 20px;align-items:center}
-.kicker{font-size:15px;font-weight:900;letter-spacing:3px;color:#155eea;text-transform:uppercase}
-h1{font-size:78px;line-height:.9;margin:12px 0 15px;letter-spacing:-3px}
-h1 span{color:#155eea}
-.subtitle{font-size:20px;font-weight:750;margin:0 0 18px}
-.pill{display:inline-block;background:#071b42;color:#fff;padding:13px 20px;border-radius:12px;font-weight:800}
-.pill i{font-style:normal;color:#f5b51b}
-.heroRight{display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.panel{background:white;border:2px solid #dce4f1;border-radius:18px;overflow:hidden}
-.panelTitle{background:#071b42;color:#fff;text-align:center;padding:11px;font-weight:900;font-size:19px}
-.rows div{display:flex;justify-content:space-between;padding:12px 14px;border-bottom:1px solid #e6ebf2;font-size:14px;font-weight:700}
-.rows div:last-child{border-bottom:0}
-.price{color:#155eea;font-size:20px;font-weight:950}
-.combo{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:18px 15px;border-bottom:1px solid #e6ebf2;font-weight:800}
-.combo:last-child{border:0}
-.combo strong{color:#d88d00;font-size:22px}
-
-/* Main lower area */
-.lower{display:grid;grid-template-columns:1.35fr 1fr;gap:20px;padding:5px 42px 20px}
-.why{background:#071b42;color:#fff;border-radius:20px;padding:22px}
-.why h2,.teachers h2{margin:0 0 15px;font-size:25px}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.feature{border:1px solid #ffffff2b;border-radius:12px;padding:13px;background:#ffffff09}
-.feature b{display:block;color:#f5b51b;font-size:13px;margin-bottom:5px}
-.feature span{font-size:12px;color:#d4def0}
-.teachers{background:#fff;border:2px solid #e0e6f0;border-radius:20px;padding:18px}
-.teacherGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.teacher{border:1px solid #dce4f1;border-radius:14px;overflow:hidden;text-align:center;background:#f7f9fc}
-.teacher img{width:100%;height:145px;object-fit:cover;object-position:center top;display:block}
-.teacher .name{font-size:13px;font-weight:900;margin:9px 4px 2px}
-.teacher .role{font-size:10px;font-weight:800;color:#155eea;min-height:26px;padding:0 3px}
-.teacher .qual{font-size:9px;color:#667085;padding:3px 5px 10px;line-height:1.35}
-.badge{display:inline-block;background:#fff3c9;color:#7a5000;border-radius:20px;padding:3px 6px;font-size:8px;font-weight:900;margin:2px}
-
-/* Footer */
-.footer{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:15px;background:#0a2d68;color:white;padding:18px 42px}
-.cta{font-size:24px;font-weight:950}
-.cta span{color:#f5b51b}
-.contact{font-size:16px;font-weight:800}
-.contact small{display:block;color:#cbd8ee;font-size:10px;margin-bottom:3px}
-.map{background:#f5b51b;color:#071b42;padding:13px 15px;border-radius:10px;font-weight:900;text-align:center;font-size:13px}
-.map small{display:block;font-weight:700;margin-top:4px;font-size:9px;word-break:break-all}
-
-/* Responsive */
-@media(max-width:1050px){
- .header{grid-template-columns:1fr .8fr} .logo{grid-column:1} .enroll{grid-column:2;grid-row:1}
- .hero{grid-template-columns:1fr} .lower{grid-template-columns:1fr}
-}
-@media(max-width:700px){
-  .poster{border-radius:0;min-height:100vh}
- .header{display:flex;flex-direction:column;align-items:flex-start;padding:22px}
- .enroll{width:100%} .logoText{font-size:34px} .logoMark{width:72px;height:72px}
- .hero,.lower{padding-left:22px;padding-right:22px}
- h1{font-size:58px} .heroRight{grid-template-columns:1fr}
- .features{grid-template-columns:1fr 1fr} .teacherGrid{grid-template-columns:1fr 1fr 1fr}
- .teacher img{height:110px} .footer{grid-template-columns:1fr;padding:18px 22px}
-}
-
-</style>
-<style>
-/* Scoped HTML Poster Styles */
+/* Scoped Poster CSS */
 .poster {
  width:min(1600px,100vw); min-height:900px; position:relative; overflow:hidden;
  background:#f8fafc; color:#071b42; border-radius:20px;
@@ -263,19 +171,20 @@ h1 span{color:#155eea}
 .poster .map small {display:block;font-weight:700;margin-top:4px;font-size:9px;word-break:break-all}
 /* Responsive */
 @media(max-width:1050px){
-.poster .header {grid-template-columns:1fr .8fr} .logo{grid-column:1} .enroll{grid-column:2;grid-row:1}
-.poster .hero {grid-template-columns:1fr} .lower{grid-template-columns:1fr}
+  .poster .header {grid-template-columns:1fr .8fr} .logo{grid-column:1} .enroll{grid-column:2;grid-row:1}
+  .poster .hero {grid-template-columns:1fr} .lower{grid-template-columns:1fr}
 }
 @media(max-width:700px){
-.poster {border-radius:0;min-height:100vh}
-.poster .header {display:flex;flex-direction:column;align-items:flex-start;padding:22px}
-.poster .enroll {width:100%} .logoText{font-size:34px} .logoMark{width:72px;height:72px}
-.poster .hero, .poster .lower {padding-left:22px;padding-right:22px}
-.poster h1 {font-size:58px} .heroRight{grid-template-columns:1fr}
-.poster .features {grid-template-columns:1fr 1fr} .teacherGrid{grid-template-columns:1fr 1fr 1fr}
-.poster .teacher img {height:110px} .footer{grid-template-columns:1fr;padding:18px 22px}
+  .poster {border-radius:0;min-height:100vh}
+  .poster .header {display:flex;flex-direction:column;align-items:flex-start;padding:22px}
+  .poster .enroll {width:100%} .logoText{font-size:34px} .logoMark{width:72px;height:72px}
+  .poster .hero, .poster .lower {padding-left:22px;padding-right:22px}
+  .poster h1 {font-size:58px} .heroRight{grid-template-columns:1fr}
+  .poster .features {grid-template-columns:1fr 1fr} .teacherGrid{grid-template-columns:1fr 1fr 1fr}
+  .poster .teacher img {height:110px} .footer{grid-template-columns:1fr;padding:18px 22px}
 }
-.poster { width: min(1600px, 100%); margin: 0 auto; min-height: 900px; position: relative; overflow: hidden; background: #f8fafc; color: #071b42; border-radius: 20px; box-shadow: 0 25px 80px #0008; }
+.poster { width: min(1600px, 100%) !important; margin: 0 auto !important; min-height: 900px; position: relative; overflow: hidden; background: #f8fafc; color: #071b42; border-radius: 20px; box-shadow: 0 25px 80px #0008; }
+
 </style>
 </head>
 <body>
@@ -297,7 +206,7 @@ h1 span{color:#155eea}
 
 <header class="header">
   <div class="logo">
-    <img src="assets/eureka-logo.png?v=1787989804" alt="Eureka Logo" style="height:85px;width:auto;object-fit:contain;">
+    <img src="assets/eureka-logo.png?v=1787989804" alt="Eureka Logo" style="height:90px;width:90px;object-fit:contain;">
     <div><div class="logoText">EUREKA</div><div class="tag">DISCOVER • LEARN • GROW</div></div>
   </div>
   <div></div>
@@ -374,8 +283,8 @@ h1 span{color:#155eea}
   <div class="contact"><small>CALL FOR ADMISSION</small>+91 88760 57287</div>
   <a class="map" href="https://maps.app.goo.gl/dCDKDCiE82t1LEuf6" target="_blank" rel="noopener">📍 VIEW LOCATION ON GOOGLE MAPS<small>maps.app.goo.gl/dCDKDCiE82t1LEuf6</small></a>
 </footer>
-</div>
-    <div class="hero-actions">
+
+    <div class="hero-actions" style="margin-top:24px;">
       <a class="btn primary" href="tel:+918876057287">📞 Call +91 88760 57287</a>
       <a class="btn dark" href="#courses">Explore Classes</a>
       <a class="btn light" href="https://maps.app.goo.gl/dCDKDCiE82t1LEuf6" target="_blank" rel="noopener">📍 Get Directions</a>
