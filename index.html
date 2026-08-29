@@ -171,17 +171,26 @@ footer strong{color:#fff;letter-spacing:.15em}
 .poster .map small {display:block;font-weight:700;margin-top:4px;font-size:9px;word-break:break-all}
 /* Responsive */
 @media(max-width:1050px){
-  .poster .header {grid-template-columns:1fr .8fr} .logo{grid-column:1} .enroll{grid-column:2;grid-row:1}
-  .poster .hero {grid-template-columns:1fr} .lower{grid-template-columns:1fr}
+  .poster .header {grid-template-columns:1fr .8fr} 
+  .poster .logo {grid-column:1} 
+  .poster .enroll {grid-column:2;grid-row:1}
+  .poster .hero {grid-template-columns:1fr} 
+  .poster .lower {grid-template-columns:1fr}
 }
 @media(max-width:700px){
-  .poster {border-radius:0;min-height:100vh}
-  .poster .header {display:flex;flex-direction:column;align-items:flex-start;padding:22px}
-  .poster .enroll {width:100%} .logoText{font-size:34px} .logoMark{width:72px;height:72px}
+  .poster {border-radius:0;min-height:auto !important; padding-bottom: 24px;}
+  .poster .header {display:flex;flex-direction:column;align-items:flex-start;padding:22px;gap:12px;}
+  .poster .enroll {width:100%; box-shadow:none;} 
+  .poster .logoText {font-size:28px; letter-spacing:4px;} 
+  .poster .logo img {height:60px !important; width:60px !important;}
+  .poster .logoMark {width:72px;height:72px}
   .poster .hero, .poster .lower {padding-left:22px;padding-right:22px}
-  .poster h1 {font-size:58px} .heroRight{grid-template-columns:1fr}
-  .poster .features {grid-template-columns:1fr 1fr} .teacherGrid{grid-template-columns:1fr 1fr 1fr}
-  .poster .teacher img {height:110px} .footer{grid-template-columns:1fr;padding:18px 22px}
+  .poster h1 {font-size:44px; letter-spacing:-1px; line-height:1.0;} 
+  .poster .heroRight {grid-template-columns:1fr}
+  .poster .features {grid-template-columns:1fr} 
+  .poster .teacherGrid {grid-template-columns:1fr; gap:16px;}
+  .poster .teacher img {height:200px} 
+  .poster .footer {grid-template-columns:1fr;padding:18px 22px; gap:12px; text-align:center;}
 }
 .poster { width: min(1600px, 100%) !important; margin: 0 auto !important; min-height: 900px; position: relative; overflow: hidden; background: #f8fafc; color: #071b42; border-radius: 20px; box-shadow: 0 25px 80px #0008; }
 
